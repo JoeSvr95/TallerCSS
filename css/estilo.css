@@ -1,21 +1,73 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
+/* Selectores básicos */
+
 body {
-    font: 100% Lucida Sans, Verdana;
-    margin: 20px;
-    line-height: 26px;
+    font-family: Verdana;
 }
-*{
+
+h1 {
 	color: blue;
-	text-align:center;
-	}
-	</style>
-	</head>
-	</html>
+	text-align: center;
+}
+
+#cabecera img {
+	width: 10%;
+	display: block;
+	position: center;
+	margin-left: auto;
+	margin-right:auto;
+}
+.elemento-menu{
+	display: inline;
+	list-style-type: none;
+}
+
+#menu{
+	text-align: center;
+}
+
+/* Selectores avanzados */
+
+#footer * {
+	font-style: italic;
+	text-align: center;
+}
+
+aside h3 + h4{
+	font-style: italic;
+	color: green;
+}
+
+aside h5 + p{
+	font-size: 8pt;
+}
+
+aside h5[title$="small"] {
+	text-decoration: underline;
+}
+
+aside li[name="fork"] {
+	list-style-image: url("https://goo.gl/y0yaro")
+}
+
+/* Pseudo-clases y Pseudo-elementos */
+
+nav ul li a:hover {
+	color: green;
+}
+
+p.descripcion::first-letter {
+	font-size: 22pt;
+	font-weight: bold;
+}
+
+article img {
+	display: block;
+	margin: auto;
+	width: 15%
+}
+
 /*MANTENGA COMENTADA ESTA PARTE HASTA EL FINAL*/
-/*section#left {
+section#left {
 	float:left;
 	width:70%;
 	
@@ -27,4 +79,4 @@ aside#right {
 
 footer#footer {
 	clear:both;
-}*/
+}
