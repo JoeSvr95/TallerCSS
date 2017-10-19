@@ -3,14 +3,19 @@
 <head>
 <style>
 body {
-    font: 100% Lucida Sans, Verdana;
-    margin: 20px;
-    line-height: 26px;
+    font: Verdana;
 }
-*{
+h1{
 	color: blue;
 	text-align:center;
 	}
+.cabecera {
+	width: 10%;
+	display:block;
+	position: center;
+	margin-left: auto;
+	margin-right:auto;
+}
 	</style>
 	</head>
 	</html>
